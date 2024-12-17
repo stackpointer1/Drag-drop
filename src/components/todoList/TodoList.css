@@ -1,0 +1,104 @@
+
+.column {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    min-width: 150px;
+    min-height: 79px;
+    box-sizing: border-box;
+    transition: height 0.3s ease, width 0.3s ease;
+}
+
+.column.with-content {
+    height: auto; /* Dynamically adjust height */
+    width: auto; /* Dynamically adjust width */
+    padding: 10px;
+}
+
+.column.empty {
+    height: 55px; /* Default height */
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.task-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.todo-list {
+    display: flex;
+    gap: 20px;
+    padding: 46px;
+    flex-wrap: wrap;
+
+}
+
+.column.todo {
+    background-color: plum; /* Green for "Todo" */
+}
+
+/* In Progress column header */
+.column.inProgress {
+    background-color: darkseagreen; /* Orange for "In Progress" */
+}
+
+/* Closed column header */
+.column.closed {
+    background-color: darkgrey; /* Red for "Closed" */
+}
+
+.task-item {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: grab;
+    margin: 5px;
+}
+
+.task-item:active {
+    cursor: grabbing;
+}
+
+.cell {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.row-text {
+    flex: 1;
+    overflow: hidden;
+    white-space: normal;
+}
+
+.delete-btn {
+    background: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    border: 1px solid slategray;
+    margin-left: 10px;
+}
+
+.task-container:empty {
+    display: none; /* Hide the container if it's empty */
+}

@@ -1,0 +1,36 @@
+.task-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+input.task-input {
+    width: 300px;
+    padding: 0 10px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #124564;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+.task-input input:focus {
+    border-color: #0a9dfb;
+    box-shadow: 0 0 5px rgba(10, 157, 251, 0.5);
+
+}
+button.add-task-btn {
+    padding: 0 10px;
+    height: 40px;
+    background-color: #124564;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.add-task-btn:hover {
+    background-color: #0a9dfb; /* Darker shade on hover */
+}
+.add-task-btn:active {
+    background-color: #004080; /* Even darker shade on click */
+}
